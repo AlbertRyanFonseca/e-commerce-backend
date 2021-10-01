@@ -71,7 +71,7 @@ router.delete('/:id', (req, res) => {
         res.status(404).json({ message: 'No Tag product found with this id' })
         return;
       }
-      res.json(dbTagData);
+      res.json(tagProductData);
     })
     .catch(err => {
       console.log(err);
